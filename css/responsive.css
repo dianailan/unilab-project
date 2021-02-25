@@ -1,6 +1,5 @@
+
 @media only screen and (max-width: 800px) {
-  /* SECOND SECTION RESPONSIVE */
-  /* Poto div responsive */
   .second-section-div {
     flex-wrap: wrap;
   }
@@ -11,16 +10,12 @@
   .text-content {
     width: 100%;
   }
-  /* text div responsive */
-  .second-section-text {
-    padding: 9%;
-  }
   .article-div {
-    flex-direction: row;
-    height: auto;
+    grid-template-columns:50% 50%;
+    height: 200px;
+    grid-gap: 10%;
   }
-  .news-1,
   .news {
-    width: 50%;
+    margin: 40px 0;
   }
 }

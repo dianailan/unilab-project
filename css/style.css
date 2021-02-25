@@ -141,10 +141,121 @@ button {
   margin-right: 35px;
 }
 .article-div {
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 /********************************************THIRD SECTION ************************************************/
+/* top article */
 .article-section {
-  padding: 40px 140px 100px;
+  padding: 40px 10.2% 100px;
   background-color: #ebeded;
+}
+.top-article-section {
+  width: 100%;
+  justify-content: space-between;
+  margin: 40px 0;
+
+}
+.little-article {
+  flex-direction: column;
+  width: 24vw;
+}
+.article-text-div {
+  background-color: white;
+  padding: 40px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  line-height: 23px;
+}
+.little-article img {
+  width: 24vw;
+}
+/* bottom article */
+.article-container {
+  max-height: 895px;
+  max-width: 1160px;
+  justify-content: space-between;
+}
+.article-2 {
+  width: 30%;
+}
+.article-1 {
+  width: 65%;
+}
+.article-1,
+.article-2 {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.photo1,
+.photo2 {
+  background-image: url('../images/golden-bridge.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 66vh;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.photo2 {
+  background-image: url('../images/forest.jpg');
+}
+
+/**********************************************FOOTER  **********************************************/
+footer {
+  padding: 60px 10.2%;
+  background-color: #a6adb4;
+}
+.footer-div {
+  justify-content: space-between;
+}
+.ul-logo a {
+  font-size: 13px;
+  color: #CBD0D3;
+  line-height: 20px;
+}
+.ul-logo {
+  width: 35%;
+  justify-content: space-between;
+}
+.bottom-logo {
+  margin-top: 5px;
+}
+.uls {
+  width: 288px;
+  justify-content: space-between;
+}
+.uls li {
+  margin-bottom: 10px;
+}
+/* icons and input style */
+.icons-email,
+.icons {
+  width: 45%;
+  justify-content: space-between;
+}
+.email1 {
+  width: 240px;
+  height: 40px;
+  background-color: #a6adb4;
+  border: 3px solid rgb(203, 208, 211, 0.5) ;
+  border-radius: 6px;
+  padding:5px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+input[type=email] {
+  border-style: hidden;
+  background-color: #a6adb4;
+  color: white;
+}
+input[type=email]:focus {
+  outline: none;
+}
+::placeholder {
+  color: rgb(203, 208, 211, 0.5);
+}
+.email p {
+  color: rgb(203, 208, 211);
+  margin-top: 15px;
 }
