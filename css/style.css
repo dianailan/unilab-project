@@ -113,7 +113,7 @@ button {
 .second-section-text {
   flex-direction: column;
   justify-content: center;
-  padding: 100px;
+  padding: 10.2%;
 }
 .second-section-text h3 {
   margin-bottom: 20px;
@@ -125,8 +125,9 @@ button {
 .second-section-text h4 {
   line-height: 25px;
 }
-.news-1 {
-  margin: 40px 0;
+.news-1,
+.news {
+  margin-top: 40px;
 }
 .wht-underline h1 {
   width: 100%;
@@ -142,7 +143,6 @@ button {
 }
 .article-div {
   display: grid;
-  grid-template-rows: 1fr 1fr;
 }
 /********************************************THIRD SECTION ************************************************/
 /* top article */
@@ -158,7 +158,7 @@ button {
 }
 .little-article {
   flex-direction: column;
-  width: 24vw;
+  max-width: 24vw;
 }
 .article-text-div {
   background-color: white;
@@ -172,36 +172,51 @@ button {
 }
 /* bottom article */
 .article-container {
-  max-height: 895px;
+  max-height: 2000px;
   max-width: 1160px;
   justify-content: space-between;
-}
-.article-2 {
-  width: 30%;
+  margin-top: 40px;
 }
 .article-1 {
   width: 65%;
 }
-.article-1,
 .article-2 {
+  width: 30%;
+  display: grid;
+}
+.article-2 p:first-of-type {
+  margin: 20px 0;
+}
+.article-1 {
   flex-direction: column;
   justify-content: space-between;
 }
+.article-container img {
+  max-width: 100%;
+}
 .photo1,
 .photo2 {
-  background-image: url('../images/golden-bridge.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 66vh;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  position: relative;
 }
-.photo2 {
-  background-image: url('../images/forest.jpg');
+.photo1 {
+  margin-bottom: 40px;
+}
+.absolute1,
+.absolute2 {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  width: 90%;
+  height: 83%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+span {
+  text-decoration: underline;
 }
 
-/**********************************************FOOTER  **********************************************/
+
+/**********************************************  FOOTER  **********************************************/
 footer {
   padding: 60px 10.2%;
   background-color: #a6adb4;
@@ -258,4 +273,9 @@ input[type=email]:focus {
 .email p {
   color: rgb(203, 208, 211);
   margin-top: 15px;
+}
+
+/************************************************************* STORY HTML STYLE ***************************************************/
+.story-body {
+  background-color: #f6f8f9;
 }
