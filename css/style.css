@@ -12,7 +12,6 @@
   src: url('../fonts/OpenSans-Regular.ttf');
 }
 
-
 /****************************************************** BASE CLASSES ************************************************/
 .d-flex {
   display: flex;
@@ -65,28 +64,34 @@ button {
   margin-top: 30px;
 }
 /****************************************************** NAVIGATION ************************************************/
+header {
+  background-color: #f6f8f9;
+}
+.clear {
+  clear: both;
+}
 #nav-section {
   width: 100%;
   background-color: #F6F8F9;
   font-family: bold-sans;
   padding: 20px;
 }
-.nav-ul {
+.nav-ul,
+.nav-div {
   justify-content: space-between;
-  align-items: center;
+}
+.margin {
+  margin-top: 20px;
 }
 .nav-div {
-  width: 30%;
-  align-items: center;
-  justify-content: flex-end;
+  max-width: 100%;
 }
-.nav-div li {
+.nav-div li{
   margin-right: 30px;
 }
 .nav-div .inactive:hover{
   color: #202124;
 }
-
 
 /****************************************************** SECOND SECTION ************************************************/
 .img-div {

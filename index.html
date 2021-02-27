@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Navigation Section -->
-    <section id="nav-section">
+    <!-- <section id="nav-section">
       <nav>
         <ul class="nav-ul d-flex">
           <li class="font-13"><a class="pinkish" href="#">LOGO</a></li>
@@ -35,7 +35,23 @@
           </div>
         </ul>
       </nav>
-    </section>
+    </section> -->
+    <header>
+      <div class="menu-toggle"></div>
+      <div class="clear"></div>
+      <nav>
+        <ul class="nav-ul d-flex bold">
+          <li class="font-13"><a class="pinkish" href="#">LOGO</a></li>
+          <div class="nav-div d-flex font-11">
+              <li><a class="black margin" href="story.html">HOME</a></li>
+              <li><a class="gray inactive margin" href="story.html">DISCOVERY</a></li>
+              <li><a class="gray inactive margin" href="story.html">PHOTOS</a></li>
+              <li><a class="gray inactive margin" href="story.html">CONTACT</a></li>
+            <li><a href="story.html"><img src="images/profile-photo.svg" alt="Profile Photo"></a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
 
     <!-- SECOND SECTION -->
     <section id="second-section">
@@ -117,6 +133,7 @@
               <div class="">
                 <p class="white bold font-24">Large article title</p>
                 <p class="white regular font-16">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo </p>
+                <p class="gray semi-bold font-11"><i class="far fa-clock"></i> 2min ago</p>
               </div>
             </div>
           </div>
@@ -127,6 +144,7 @@
               <div class="">
                 <p class="white bold font-24">Large article title</p>
                 <p class="white regular font-16">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo </p>
+                <p class="white semi-bold font-11"><i class="far fa-clock"></i> 2min ago</p>
               </div>
             </div>
           </div>
@@ -156,10 +174,11 @@
         </div>
       </div>
     </section>
+    <!-- FOOTER -->
     <footer>
       <div class="footer-div d-flex bold">
         <div class="ul-logo d-flex">
-          <div class="">
+          <div class="bottom-logo-div">
             <p class="font-13 white bottom-logo">LOGO</p>
           </div>
           <div class="d-flex uls">
@@ -200,5 +219,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
