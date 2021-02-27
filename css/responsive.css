@@ -1,3 +1,28 @@
+@media only screen and (min-width: 500px){
+  .hidden-text,
+  .nav-div i {
+    display: none;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .story-first-section {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 46%));
+    grid-gap: 8%;
+  }
+  .story-second-selection {
+    padding: 5%;
+  }
+  .story-second-section {
+    align-items: center;
+  }
+  .story-hidden {
+    display: none;
+  }
+  .story-second-text {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 46%));
+    grid-gap: 8%;
+  }
+}
 /* *************************************************TABLET RESPONSIVE ***************************************** */
 @media only screen and (max-width: 800px) {
   /* SECOND SECTION */
@@ -57,6 +82,31 @@
     max-width: 30%;
     margin-top: 50px;
   }
+  /* *********************************STORY PAGE TABLET RESPONSIVE ************************** */
+  .story-first-section {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 100%));
+  }
+  .story-second-selection {
+    padding: 15%;
+  }
+  [type="date"],
+  [type="text"] {
+    min-width: 100%;
+  }
+  .story-second-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .story-second-text {
+    min-width: 100%;
+    margin-top: 50px;
+  }
+  .text-heading {
+    min-width: 50%;
+  }
+  .story-third-text {
+    min-width: 100%;
+  }
 }
 /* ************************************************MOBILE RESPONSIVE ************************************* */
 @media (max-width: 500px) {
@@ -102,6 +152,23 @@
   .nav-div li {
     margin-top: 40px;
   }
+  .show-icon {
+    display: block;
+  }
+
+  .hidden-text {
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  .nav-div img {
+    vertical-align: middle;
+    width: 13px;
+    margin-right: 20px;
+  }
+  .nav-div i {
+    margin-right: 20px;
+  }
+
   /* SECOND SECTION */
   .text-content {
     min-width: 90%;
@@ -133,5 +200,10 @@
   }
   .article-2 {
     grid-template-columns: repeat(auto-fit, minmax(200px, 100%));
+  }
+  /* ***********************STORY PAGE MOBILE *************************** */
+  .story-second-text {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 100%));
+    grid-gap: 8%;
   }
 }

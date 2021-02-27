@@ -16,9 +16,15 @@
 .d-flex {
   display: flex;
 }
+.d-grid {
+  display: grid;
+}
 .heading {
   font-size: 24px;
   font-family: bold-sans;
+}
+.line-height-26 {
+  line-height: 26px;
 }
 /* font-family classes */
 .bold {
@@ -31,14 +37,20 @@
   font-family: semi-bold;
 }
 /* font-size classes */
-.font-13 {
-  font-size: 13px;
-}
 .font-11 {
   font-size: 11px;
 }
+.font-13 {
+  font-size: 13px;
+}
+.font-14 {
+  font-size: 14px;
+}
 .font-16 {
   font-size: 16px;
+}
+.font-32 {
+  font-size: 32px;
 }
 /* Font Color classes */
 .gray {
@@ -76,6 +88,9 @@ header {
   font-family: bold-sans;
   padding: 20px;
 }
+.nav-ul {
+    padding: 10px 5px 5px 25px;
+}
 .nav-ul,
 .nav-div {
   justify-content: space-between;
@@ -106,7 +121,6 @@ header {
 .text-content {
   max-width: 70%;
   color: #FFFFFF;
-  line-height: 26px;
 }
 .text-content p:first-of-type {
   margin-top:40px;
@@ -124,7 +138,6 @@ header {
   margin-bottom: 20px;
 }
 .second-section-text p:first-of-type {
-  line-height: 26px;
   margin-bottom: 10px;
 }
 .second-section-text h4 {
@@ -145,9 +158,6 @@ header {
 }
 .fa-chevron-left {
   margin-right: 35px;
-}
-.article-div {
-  display: grid;
 }
 /********************************************THIRD SECTION ************************************************/
 /* top article */
@@ -187,7 +197,6 @@ header {
 }
 .article-2 {
   width: 30%;
-  display: grid;
 }
 .article-2 p:first-of-type {
   margin: 20px 0;
@@ -216,7 +225,7 @@ header {
   justify-content: space-between;
   flex-direction: column;
 }
-span {
+.underlined {
   text-decoration: underline;
 }
 
@@ -269,7 +278,9 @@ input[type=email] {
   background-color: #a6adb4;
   color: white;
 }
-input[type=email]:focus {
+input[type=email]:focus,
+input[type=text]:focus,
+input[type=date]:focus {
   outline: none;
 }
 ::placeholder {
@@ -281,6 +292,122 @@ input[type=email]:focus {
 }
 
 /************************************************************* STORY HTML STYLE ***************************************************/
+.home-icons {
+  width: 100%;
+}
 .story-body {
   background-color: #f6f8f9;
+}
+.body-section {
+  background-color: #f6f8f9;
+  padding: 0 10%;
+}
+.story-first-section {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: white;
+}
+.story-second-selection {
+  flex-direction: column;
+  justify-content: center;
+
+}
+.story-first-section img {
+  max-width: 100%;
+}
+.story-first-section img:last-child {
+  margin-top: 10%;
+}
+.story-first-section-div1 {
+  position: relative;
+}
+.first-section-text {
+  position: absolute;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+[type="date"] {
+  background:#a6adb4 url('../images/chevron-down.svg')  97% 50% no-repeat ;
+  margin: 10px 0 40px 0;
+}
+.keyword {
+  margin-top: 10px;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-datetime-edit-month-field { color: #a6adb4; }
+[type="date"]::-webkit-datetime-edit-day-field { color: #a6adb4 }
+[type="date"]::-webkit-datetime-edit-year-field { color: #a6adb4; }
+[type="date"]::-webkit-datetime-edit-text { color: #a6adb4; padding: 0 0.3em; }
+[type=date],
+[type="text"] {
+  border: 2px solid #ebeded;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 3px 10px;
+  width: 70%;
+  height: 40px;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.underline-small {
+  margin-bottom: 10%;
+}
+.underline-small::after {
+  content:'';
+  height:2px;
+  width:10%;
+  background:#ff4d4d;
+  position:absolute;
+  left:calc(50% - 6%);
+  margin-top: 20px;
+}
+/* STORY SECOND SECTION */
+.story-second-section {
+  margin: 7% 0;
+  padding: 4% 0;
+  border-top: 2px solid #EBEDED;
+  border-bottom: 2px solid #EBEDED;
+}
+.story-second-text {
+  width: 65%;
+}
+.text-heading {
+  width: 30%;
+  margin-right: 5%;
+}
+/* STORY HIRD SECTION */
+.story-third-section img {
+  max-width: 100%;
+}
+.story-third-text {
+  width: 70%;
+  padding-bottom: 4%;
+  margin-bottom: 7%;
+  border-bottom: 2px solid #EBEDED;
+}
+.story-third-text p {
+  margin-top: 40px;
+}
+.home-icons {
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.bars-div {
+  border: 2px solid #EBEDED;
+  padding: 5px;
+  border-radius: 6px;
+}
+.home-icons-icons span{
+  margin-left:20px;
+}
+.home-icons-icons i {
+  margin-right: 30px;
 }

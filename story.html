@@ -22,27 +22,87 @@
   </head>
   <body class="story-body">
     <!-- NAVIGATION -->
-    <section id="nav-section">
+    <header>
+      <div class="menu-toggle"></div>
+      <div class="clear"></div>
       <nav>
-        <ul class="nav-ul d-flex">
-          <li class="font-13"><a class="pinkish" href="index.html">LOGO</a></li>
+        <ul class="nav-ul d-flex bold">
+          <li class="font-13"><a class="pinkish" href="#">LOGO</a></li>
           <div class="nav-div d-flex font-11">
-            <li><a class="black" href="index.html">HOME</a></li>
-            <li><a class="gray inactive" href="index.html">DISCOVERY</a></li>
-            <li><a class="gray inactive" href="index.html">PHOTOS</a></li>
-            <li><a class="gray inactive" href="index.html">CONTACT</a></li>
-            <a href="index.html"><img src="images/profile-photo.svg" alt="Profile Photo"></a>
+              <li><a class="black margin" href="story.html"><i class="fas fa-home"></i> HOME</a></li>
+              <li><a class="gray inactive margin" href="index.html"><i class="fas fa-compass"></i> DISCOVERY</a></li>
+              <li><a class="gray inactive margin" href="index.html"><i class="fas fa-image"> </i>PHOTOS</a></li>
+              <li><a class="gray inactive margin" href="index.html"><i class="fas fa-envelope"> </i>CONTACT</a></li>
+            <li><a href="story.html"><img src="images/profile-photo.svg" alt="Profile Photo"> <span class="hidden-text gray font-13 bold">PROFILE</span></a></li>
           </div>
         </ul>
       </nav>
-    </section>
+    </header>
     <section class="body-section">
-      <div class="d-flex">
-        <div class="">
-
+      <div class="home-icons d-flex">
+        <div class="home-icons-icons">
+          <p class="bold font-11 black"><i class="fas fa-home"></i> STORY <span>/</span> <span class="gray">WORLD NEWS</span></p>
         </div>
-        <div class="">
-
+        <div class="bars-div">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div class="story-first-section d-grid">
+        <div class="story-first-section-div1">
+          <img src="images/image1.png" alt="landscape image">
+          <div class="first-section-text d-flex">
+            <div class="underline-small">
+              <p class="white bold font-32">WORLD NEWS</p>
+            </div>
+            <p class="white font-16 bold">Lorem ipsum dolor sit amet, in eam odio amet,</p>
+            <img src="images/avatar.svg" alt="">
+          </div>
+        </div>
+        <div class="d-flex story-second-selection">
+          <p class="font-13 bold black">Select a date</p>
+          <input type="date" name="dateofbirth" id="dateofbirth" >
+          <p class="font-13 bold black">Enter the first keywords</p>
+          <input class="keyword" type="text" name="keywords" value="">
+          <button class="bold font-11 white" type="button" name="button">SEARCH</button>
+        </div>
+      </div>
+      <div class="story-second-section d-flex">
+        <div class="text-heading">
+          <img src="images/avatar.svg" alt="">
+          <p class="black bold line-height-26">Phasellus eu nulla malesuada, luctus diam.</p>
+        </div>
+        <div class="d-grid story-second-text">
+          <div class="">
+            <p class="regular gray font-14 line-height-26">Dignissim rutrum ridiculus lacinia phasellus torquent ad aliquet, nisi dictum cubilia class habitasse commodo,
+              semper potenti nec ac per egestas. Ac volutpat ullamcorper phasellus montes sollicitudin litora ridiculus mi
+              conubia inceptos euismod odio curabitur, tortor eros
+              porta venenatis facilisis quam blandit in ut lobortis consequat justo. Hac libero quisque tortor conubia iaculis
+            </p>
+          </div>
+          <div class="">
+            <p class="regular gray font-14 line-height-26">
+              Nascetur himenaeos morbi gravida porta sapien justo aliquam pellentesque dapibus curae,
+              cursus ultrices suspendisse cras ligula id aenean vulputate taciti,
+              eleifend eros bibendum scelerisque lobortis venenatis nulla tristique tempus. Quisque eleifend vulputate.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="story-third-section">
+        <img src="images/image.png" alt="elephant image">
+        <div class="story-third-text">
+          <p class="semi-bold font-14 gray line-height-26">Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos
+            laoreet libero tortor, nascetur non habitasse iaculis tempor nec egestas fames augue, platea porta integer nostra curae sed arcu.
+            Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor
+            nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at
+          </p>
+          <p class="semi-bold font-14 gray line-height-26">
+            Ullamcorper porttitor non pharetra cursus nisl mollis pellentesque primis penatibus platea, dictum himenaeos eget mi bibendum ad molestie
+            aliquet curae quis quisque, nunc duis ac at elementum dui integer viverra tempus. Lacinia bibendum diam senectus egestas nec molestie convallis
+            aenean hac tempus, vivamus purus congue euismod fringilla cursus donec est eu blandit platea, feugiat vitae netus orci habitant accumsan
+            placerat morbi nostra.
+          </p>
+          <p class="black semi-bold font-14 line-height-26 story-hidden">In hac habitasse platea dictumst. Sed nec venenatis odio. Nulla faucibus ipsum sed faucibus accumsan. Donec rhoncus luctus.</p>
         </div>
       </div>
     </section>
@@ -50,27 +110,27 @@
     <footer>
       <div class="footer-div d-flex bold">
         <div class="ul-logo d-flex">
-          <div class="">
+          <div class="bottom-logo-div">
             <p class="font-13 white bottom-logo">LOGO</p>
           </div>
           <div class="d-flex uls">
             <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="index.html">DISCOVERY</a></li>
-              <li><a href="index.html">PHOTOS</a></li>
-              <li><a href="index.html">CONTACT</a></li>
+              <li><a href="story.html">HOME</a></li>
+              <li><a href="story.html">DISCOVERY</a></li>
+              <li><a href="story.html">PHOTOS</a></li>
+              <li><a href="story.html">CONTACT</a></li>
             </ul>
             <ul>
-              <li><a href="index.html">ABOUT</a></li>
-              <li><a href="index.html">HELP</a></li>
-              <li><a href="index.html">TERMS</a></li>
-              <li><a href="index.html">GUIDLINES</a></li>
+              <li><a href="story.html">ABOUT</a></li>
+              <li><a href="story.html">HELP</a></li>
+              <li><a href="story.html">TERMS</a></li>
+              <li><a href="story.html">GUIDLINES</a></li>
             </ul>
             <ul>
-              <li><a href="index.html">TESTIMONIALS</a></li>
-              <li><a href="index.html">ADVERTISE</a></li>
-              <li><a href="index.html">INTEGRATIONS</a></li>
-              <li><a href="index.html">CAREERS</a></li>
+              <li><a href="story.html">TESTIMONIALS</a></li>
+              <li><a href="story.html">ADVERTISE</a></li>
+              <li><a href="story.html">INTEGRATIONS</a></li>
+              <li><a href="story.html">CAREERS</a></li>
             </ul>
           </div>
         </div>
@@ -91,5 +151,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
