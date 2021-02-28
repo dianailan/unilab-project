@@ -21,6 +21,7 @@
   .story-second-section {
     margin: 7% 0;
     padding: 4% 0;
+
   }
 }
 @media only screen and (min-width: 800px) {
@@ -118,6 +119,7 @@
   .story-second-section {
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 40px;
   }
   .story-second-text {
     min-width: 100%;
