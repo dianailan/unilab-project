@@ -300,7 +300,6 @@ input[type=date]:focus {
 }
 .body-section {
   background-color: #f6f8f9;
-  padding: 0 10%;
 }
 .story-first-section {
   border-top-right-radius: 6px;
@@ -330,6 +329,7 @@ input[type=date]:focus {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  text-align: center;
 }
 [type="date"] {
   background:#a6adb4 url('../images/chevron-down.svg')  97% 50% no-repeat ;
@@ -371,8 +371,6 @@ input[type=date]:focus {
 }
 /* STORY SECOND SECTION */
 .story-second-section {
-  margin: 7% 0;
-  padding: 4% 0;
   border-top: 2px solid #EBEDED;
   border-bottom: 2px solid #EBEDED;
 }

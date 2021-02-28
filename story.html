@@ -23,23 +23,26 @@
   <body class="story-body">
     <!-- NAVIGATION -->
     <header>
-      <div class="menu-toggle"></div>
+      <div class="">
+        <div class="arrow-left"><i class="fas fa-arrow-left"></i></div>
+        <div class="menu-toggle"></div>
+      </div>
       <div class="clear"></div>
       <nav>
         <ul class="nav-ul d-flex bold">
           <li class="font-13"><a class="pinkish" href="#">LOGO</a></li>
-          <div class="nav-div d-flex font-11">
-              <li><a class="black margin" href="story.html"><i class="fas fa-home"></i> HOME</a></li>
-              <li><a class="gray inactive margin" href="index.html"><i class="fas fa-compass"></i> DISCOVERY</a></li>
+          <div class="nav-div d-flex font-11 max-width-100">
+              <li><a class="gray inactive margin" href="story.html"><i class="fas fa-home"></i> HOME</a></li>
+              <li><a class="gray black margin" href="index.html"><i class="fas fa-compass"></i> DISCOVERY</a></li>
               <li><a class="gray inactive margin" href="index.html"><i class="fas fa-image"> </i>PHOTOS</a></li>
               <li><a class="gray inactive margin" href="index.html"><i class="fas fa-envelope"> </i>CONTACT</a></li>
-            <li><a href="story.html"><img src="images/profile-photo.svg" alt="Profile Photo"> <span class="hidden-text gray font-13 bold">PROFILE</span></a></li>
+            <li><a href="story.html"><img src="images/profile-photo.svg" alt="Profile Photo"> <span class="hidden-text gray font-13 inactive bold">PROFILE</span></a></li>
           </div>
         </ul>
       </nav>
     </header>
     <section class="body-section">
-      <div class="home-icons d-flex">
+      <div class="home-icons width-100">
         <div class="home-icons-icons">
           <p class="bold font-11 black"><i class="fas fa-home"></i> STORY <span>/</span> <span class="gray">WORLD NEWS</span></p>
         </div>
@@ -49,8 +52,8 @@
       </div>
       <div class="story-first-section d-grid">
         <div class="story-first-section-div1">
-          <img src="images/image1.png" alt="landscape image">
-          <div class="first-section-text d-flex">
+          <img class="max-width-100" src="images/image1.png" alt="landscape image">
+          <div class="first-section-text d-flex width-100">
             <div class="underline-small">
               <p class="white bold font-32">WORLD NEWS</p>
             </div>
@@ -89,7 +92,7 @@
         </div>
       </div>
       <div class="story-third-section">
-        <img src="images/image.png" alt="elephant image">
+        <img class="max-width-100" src="images/image.png" alt="elephant image">
         <div class="story-third-text">
           <p class="semi-bold font-14 gray line-height-26">Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos
             laoreet libero tortor, nascetur non habitasse iaculis tempor nec egestas fames augue, platea porta integer nostra curae sed arcu.
@@ -104,6 +107,15 @@
           </p>
           <p class="black semi-bold font-14 line-height-26 story-hidden">In hac habitasse platea dictumst. Sed nec venenatis odio. Nulla faucibus ipsum sed faucibus accumsan. Donec rhoncus luctus.</p>
         </div>
+      </div>
+      <div class="page-num">
+        <p class="font-11 active-underlined bold black">01</p>
+        <p class="font-11 bold gray">02</p>
+        <p class="font-11 bold gray">03</p>
+        <p class="font-11 bold gray">04</p>
+        <p class="font-11 bold gray">05</p>
+        <p class="font-11 bold gray">06</p>
+        <p class="font-11 bold gray">...</p>
       </div>
     </section>
     <!-- FOOTER -->
@@ -137,7 +149,7 @@
         <div class="icons-email d-flex">
           <div class="email">
             <div class="email1 d-flex">
-              <input type="email" id="email" name="email" placeholder="Email">
+              <input class="white" type="email" id="email" name="email" placeholder="Email">
               <i class="fas fa-location-arrow white font-1"></i>
             </div>
             <p class="font-11">Stay in touch with us for the freshest products!</p>
